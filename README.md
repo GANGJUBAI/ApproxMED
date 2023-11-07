@@ -37,6 +37,11 @@ We propose a novel, simple and efficient approximate MED finding algorithm CG-ME
      If you want to test three synthetic dataset, you could get it from ./data_generate/gene Constant.c or geneNormal.c or geneZipf.c.
 
 ## Inout Format
+Since the input parameters used by algorithms vary with the dimension, the input format is included in the repository (runXXX.sh). 
+
+Here's a small example with 3-dimensional double-precision floating-point dataset:
+
+` ./Main_FSM_ori $DatasetPath 256 384 384 D 3 `
 
 ## Application
 We implement our approximate median finding algorithms in data compression, in which we use the common compressor FPC and FPZIP.
@@ -45,15 +50,15 @@ We implement our approximate median finding algorithms in data compression, in w
 
   **FPC** is a fast and effective lossless compressor/decompressor for IEEE 754 64-bit double-precision floating-point data. 
   
-  The raw source code can be found at https://userweb.cs.txstate.edu/~burtscher/research/FPC/, and adapted FPC could be found at AMP/src/fpc.h
+  The raw source code can be found at https://userweb.cs.txstate.edu/~burtscher/research/FPC/, and adapted FPC could be found at test/Eval/Application/fpc.h
   
 ### 2.FPZIP
 
   **FPZIP** is a library and command-line utility for lossless and optionally lossy compression of 2D and 3D floating-point arrays.
   
-  The source code and installation can be found at https://github.com/llnl/fpzip. It should be installed to AMP/Compressor.
+  The source code and installation can be found at https://github.com/llnl/fpzip. It should be installed to test/Compressor.
 ### 3.SZ
 
   **SZ** is error-bounded lossy compressor for HPC data.
   
-   Although SZ is not used in paper, the function for reading 3D data is used. The source code and installation can be found at https://github.com/szcompressor/SZ. Similarly, it should be installed to AMP/Compressor.
+   Although SZ is not used in paper, the function for reading 3D data is used. The source code and installation can be found at https://github.com/szcompressor/SZ. Similarly, it should be installed to test/Compressor.
