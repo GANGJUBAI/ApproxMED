@@ -17,9 +17,9 @@ We propose a novel, simple and efficient approximate MED finding algorithm CG-ME
 | _power_ | Gloabal Active Power Measurements | 1041120 | time-series | float |
 | Moving MNIST | Computer vision | 64x64 | video | integer |
 | Lena | Computer vision | 512x512 | image | integer |
-| _zipf_ | Synthetic | - |zipf(1.2, 10000)|integer |
-| _norm_ | Synthetic | - | N (0, 1) |integer |
-| _constant_ | Synthetic | - |value=1|integer |
+| _zipf_ | Synthetic | - |zipf(1.2, 10000)| integer |
+| _norm_ | Synthetic | - | N (0, 1) | integer |
+| _constant_ | Synthetic | - |value=1| integer |
 
 ---- The first three datasets can be found at Scientific Data Reduction Benchmarks suite (https://sdrbench.github.io/).
 
@@ -27,7 +27,7 @@ We propose a novel, simple and efficient approximate MED finding algorithm CG-ME
 
 ---- The Moving MNIST and Lena datasets are significant datasets for computer version from Kaggle public dataset.
 
----- The last three datasets are synthetic.
+---- The last three datasets are synthetic, they are treated as 1D dataset, the size can be selected randomly.
 
 ## Data generation
   1. Read Image/vedio
