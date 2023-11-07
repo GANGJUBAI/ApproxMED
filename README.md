@@ -3,7 +3,11 @@ We propose a novel, simple and efficient approximate MED finding algorithm CG-ME
 
 # Get Started
 * Clone the repository:
-    git clone 
+  
+    `git clone https://github.com/GANGJUBAI/ApproxMED.git`
+  
+* Get the dataset:
+  
 ## Dataset
 | Dataset | Description         | Dimensions   | Characteristics | Type   |
 | :-----: | :----------------:  | :--------:    |:------:| :------:|
@@ -32,4 +36,24 @@ We propose a novel, simple and efficient approximate MED finding algorithm CG-ME
   2. Generate the synthetic datasets
      If you want to test three synthetic dataset, you could get it from ./data_generate/gene Constant.c or geneNormal.c or geneZipf.c.
 
-## Quick start 
+## Inout Format
+
+## Application
+We implement our approximate median finding algorithms in data compression, in which we use the common compressor FPC and FPZIP.
+
+### 1.FPC
+
+  **FPC** is a fast and effective lossless compressor/decompressor for IEEE 754 64-bit double-precision floating-point data. 
+  
+  The raw source code can be found at https://userweb.cs.txstate.edu/~burtscher/research/FPC/, and adapted FPC could be found at AMP/src/fpc.h
+  
+### 2.FPZIP
+
+  **FPZIP** is a library and command-line utility for lossless and optionally lossy compression of 2D and 3D floating-point arrays.
+  
+  The source code and installation can be found at https://github.com/llnl/fpzip. It should be installed to AMP/Compressor.
+### 3.SZ
+
+  **SZ** is error-bounded lossy compressor for HPC data.
+  
+   Although SZ is not used in paper, the function for reading 3D data is used. The source code and installation can be found at https://github.com/szcompressor/SZ. Similarly, it should be installed to AMP/Compressor.
