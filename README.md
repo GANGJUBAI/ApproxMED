@@ -1,4 +1,4 @@
-The median (MED) is a crucial statistic for measuring the central tendency of a set of quantitative elements. However, computing the exact MED is costly, and even stateof-the-art (SOTA) algorithms struggle to meet the demands of modern scientific data. Therefore, approximate MED is often considered a more feasible solution.
+The median (MED) is a crucial statistic for measuring the central tendency of a set of quantitative elements. However, computing the exact MED is costly, and even state-of-the-art (SOTA) algorithms struggle to meet the demands of modern scientific data. Therefore, approximate MED is often considered a more feasible solution.
 We propose a novel, simple and efficient approximate MED finding algorithm CG-MED and a fine-grained implementation of CG-MED, called FG-MED.
 
 # Get Started
@@ -15,4 +15,10 @@ We propose a novel, simple and efficient approximate MED finding algorithm CG-ME
 | _norm_ | Synthetic | - | N (0, 1) |integer |
 | _constant_ | Synthetic | - |value=1|integer |
 
-The first five datasets can be found at Scientific Data Reduction Benchmarks suite (https://sdrbench.github.io/) and the other can be found at Datasets for Benchmarking Floating-Point Compressors suite (https://dps.uibk.ac.at/~fabian/datasets/)
+---- The first three datasets can be found at Scientific Data Reduction Benchmarks suite (https://sdrbench.github.io/).
+
+---- The _power_ dataset consists of Global Active Power measurements from the UCI Individual household electric power consumption dataset.
+
+---- The Moving MNIST and Lena datasets are significant datasets for computer version from Kaggle public dataset.
+
+---- The last three datasets are synthetic.
