@@ -2,6 +2,8 @@ The median (MED) is a crucial statistic for measuring the central tendency of a 
 We propose a novel, simple and efficient approximate MED finding algorithm CG-MED and a fine-grained implementation of CG-MED, called FG-MED.
 
 # Get Started
+* Clone the repository:
+    git clone 
 ## Dataset
 | Dataset | Description         | Dimensions   | Characteristics | Type   |
 | :-----: | :----------------:  | :--------:    |:------:| :------:|
@@ -23,4 +25,11 @@ We propose a novel, simple and efficient approximate MED finding algorithm CG-ME
 
 ---- The last three datasets are synthetic.
 
-## 
+## Data generation
+  1. Read Image/vedio
+     If you want to test the dataset Lena or Moving MNIST, you could get it from ./data_generate/readImage.py or ./data_generate/readVedio.py.
+     
+  2. Generate the synthetic datasets
+     If you want to test three synthetic dataset, you could get it from ./data_generate/gene Constant.c or geneNormal.c or geneZipf.c.
+
+## Quick start 
